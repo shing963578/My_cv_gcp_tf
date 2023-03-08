@@ -23,7 +23,6 @@ resource "google_compute_instance" "vm_instance" {
     network = google_compute_network.vpc_network.self_link
 
     access_config {
-      # 使用 ephemeral 外部 IP（即自動分配 IP）
     }
   }
 
@@ -48,7 +47,6 @@ resource "google_compute_instance" "vm_instance" {
 
 resource "google_compute_address" "vm_public_ip" {
   name = "my-cv-vm-ip"
-  // 分配靜態公共IP地址
   address_type = "EXTERNAL"
 }
 
