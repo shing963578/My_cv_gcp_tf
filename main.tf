@@ -36,7 +36,7 @@ resource "google_compute_instance" "vm_instance" {
         sudo systemctl start nginx
         sudo systemctl enable nginx
         sudo apt-get install wget -y
-        wget https://filebin.net/j0v0e73aqkwjak1e/My-cv.zip
+        wget https://download1592.mediafire.com/0e9rk74ujr8gFnW0mjMmRsObpGyS46W9VLjj76QOiUom9sg03V9iAPeoOlccpSP7VjpqLE9XHCP7EnryjdBXZUDLelcAEA/6cqgrrtvex47ybz/My-cv.zip
         sudo unzip -o My-cv.zip
         sudo systemctl restart nginx
     EOF
